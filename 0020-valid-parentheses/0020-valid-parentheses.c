@@ -41,7 +41,6 @@ bool isValid(char * s){
     struct Stack* stack = createStack(strlen(s));
 
     for (int i=0; i<strlen(s); i++) {
-     
         if (s[i]=='(' || s[i]=='[' || s[i]=='{')
             push(stack, s[i]);
         else {
@@ -50,12 +49,9 @@ bool isValid(char * s){
             else
                 return 0;
         }
-
     }
- // printf("%d",stack->top);
     if (stack->top==-1)
-        return 1;
-    
+        return 1;  
     return 0;
 }
 
