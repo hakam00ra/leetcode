@@ -25,9 +25,9 @@ bool isPalindrome(int x)
         xs /= 10;
     }
 
-    for (int i=0; i<size; i++) {
+    for (int i=0; i<size; i++)
          if (w[i] != xe[i])
              return 0;
-    }
+    
     return 1;
 }
